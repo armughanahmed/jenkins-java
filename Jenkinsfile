@@ -34,7 +34,7 @@ pipeline {
             steps {
                 script {
                     buildImage 'armughanahmed/shared-lib-app:sla-3.0'
-                    // dockerLogin()
+                    dockerLogin()
                     dockerPush 'armughanahmed/shared-lib-app:sla-3.0'
                 }
             }
